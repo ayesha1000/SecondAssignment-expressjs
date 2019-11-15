@@ -1,4 +1,6 @@
 # SecondAssignment-expressjs
+Product Manager application
+
 Server.js is the main express file
 //Front-end:
 
