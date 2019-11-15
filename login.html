@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body{
+                background-color:gainsboro;
+            }
+        #firstdiv{
+            border:5px dashed teal;
+            margin-top:60px;
+            width: 30%;
+           height:200px;
+            background-color:aliceblue;
+     text-align: center;
+            margin-left:450px;
+            padding:10px;
+            padding-top:40px;
+            padding-bottom:40px;
+          
+        }
+        .btn{
+            background-color:teal;
+            width:100px;
+            height:35px;
+            margin-left:30px;
+          font-size: 18px;
+        }
+        .forget{
+            width:200px;
+          text-decoration: none;
+          color:black;
+            padding-left:200px;
+            
+          
+        }
+        .signup{
+            color:black;
+            margin-left:30px;
+            text-decoration: none;
+        }
+        h1{
+                color:whitesmoke;
+                background-color:teal;
+                margin-left:400px;
+                width:35%;
+                text-align:center;
+               
+                padding: 30px;
+
+            }
+            input{
+                background-color: lightgray;
+            } </style>
+    </head>
+    <body>
+        <h1 class="style">Welcome! LOGIN</h1>
+        <div id="firstdiv">
+<form action='/login' method="POST">
+    <div>
+            Username:
+            <input name="name" type="text" />
+    </div>
+    <br/>
+    <div>
+            password:
+            <input name="psw" type="password" />
+    </div>     <br/>
+<div>
+   
+ 
+
+  
+   <input class="btn" type="submit" onClick="location.href='http://localhost:3000/login'" value="Login"></button>
+   <p class="signup">Don't have an account?</p>
+
+   <input class="btn" type="button" onClick="location.href='http://localhost:3000/signup'" value="SignUp"></button>
+</div>
+
+
+</form>
+        </div>
+       
+    
+
+    </body>
+</html>

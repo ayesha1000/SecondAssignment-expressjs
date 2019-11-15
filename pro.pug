@@ -1,0 +1,83 @@
+html 
+head 
+    style.
+
+        body{
+                background-color:gainsboro;
+            }
+        #firstdiv{
+            border:5px dashed teal;
+            width: 100%;
+            background-color:aliceblue;
+            }
+           
+        table, th, td {
+            border: 2px solid teal;
+            text-align: center;
+            }
+        
+        
+        
+        h1{
+                color:whitesmoke;
+                background-color:teal;
+                margin-left:400px;
+                width:35%;
+                text-align:center;
+               
+                padding: 30px;
+
+            }
+           input{
+                background-color: lightgray;
+            }
+           
+            .btn{
+            background-color:teal;
+            width:120px;
+            height:50px;
+            font-size:20px;
+            color:whitesmoke;
+            margin-left:30px;
+          
+        } 
+        .butn{
+             background-color:teal;
+            width:100px;
+            height:40px;
+            font-size:15px;
+            color:whitesmoke;
+            margin:5px;
+            
+        }
+title Simple template 
+body 
+h1.style PRODUCT LIST
+button.btn(onclick="location.href='http://localhost:3000/addnew'") Addnew
+br
+br
+
+table#firstdiv(style='width:100%', border='1')
+    tr(style='height:40px')
+            th Name
+            th ID
+            th Price
+            th Category
+            th Description
+            th Action
+         
+    each result in results
+        
+        tr(style='height:40px')
+            td #{result.name}
+            td #{result.productId}
+            td #{result.price}
+            td #{result.category}
+            td #{result.description}
+            td
+                button.butn(onclick="location.href='http://localhost:3000/delete'") Delete 
+                button.butn(onclick="location.href='http://localhost:3000/update'") Update  
+           
+br
+
+button.btn(onclick="location.href='http://localhost:3000/'") Logout   

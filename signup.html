@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body{
+                background-color:gainsboro;
+            }
+        #firstdiv{
+            border:5px dashed teal;
+            width: 25%;
+            background-color:aliceblue;
+  
+            margin-left:500px;
+            padding:10px;
+          
+        }
+        .btn{
+            background-color:teal;
+            width:100px;
+            height:30px;
+            margin-left:100px;
+          
+        }
+        .forget{
+            width:200px;
+          text-decoration: none;
+          color:black;
+            padding-left:200px;
+            
+          
+        }
+        .signup{
+            color:black;
+            text-decoration: none;
+        }
+        h1{
+                color:whitesmoke;
+                background-color:teal;
+                margin-left:400px;
+                width:35%;
+                text-align:center;
+               
+                padding: 30px;
+
+            }
+            input{
+                background-color: lightgray;
+            } </style>
+    </head>
+    <body>
+        <h1 class="style">Welcome! SIGNUP</h1>
+        <div id="firstdiv">
+<form action='/signup' method="POST">
+    <div>
+            Username:
+            <input name="name" type="text" />
+    </div>
+    <br/>
+    <div>
+            Email:
+            <input name="email" type="text" />
+    </div>
+    <br/>
+    <div>
+            Password:
+            <input name="psw" type="password" />
+    </div>
+
+    <br/>
+    
+    <div>
+            Confirm password:
+            <input name="cpsw" type="password" />
+    </div>    <br/>
+
+    <div>
+        Role:
+        <input type="radio" name="role" value="saler"> Saler
+        <input type="radio" name="role" value="buyer"> Buyer<br>
+</div>    <br/>
+<div>
+    <input class="btn" onClick="location.href='http://localhost:3000/login'" type="submit" value="SignUp">
+</div>
+
+
+</form>
+        </div>
+       
+    
+
+    </body>
+</html>
